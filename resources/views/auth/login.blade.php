@@ -43,8 +43,11 @@
                     {{ __('Log in') }}
                 </x-button>
             </div>
-            <div>
-                <a href="{{url('auth/google')}}">Logging with google</a>
+
+            <div class="flex items-center justify-center mt-4">
+                <a href="{{ url('auth/google') }}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    {{ __('Log in with Google') }}
+                </a>
             </div>
         </form>
     </x-authentication-card>
